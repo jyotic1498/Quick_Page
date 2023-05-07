@@ -15,6 +15,16 @@ router.post('/add', (req, res) => {
     });
 });
 
+router.post('/authenticate', (req, res) => {
+    Model.findOne(req.body)
+    .then((result) => {
+        if(result) res.json(result);
+        else res.status(401).json({status : 'error'});
+    }).catch((err) => {
+        res.status(500).json(err);
+    });
+});
+
 router.get('/getall', (req, res) => {
     Model.find({})
     .then((result) => {

@@ -7,12 +7,13 @@ import About from './components/About';
 import Login from './components/Login';
 import Contfeed from './components/Contfeed';
 import Signup from './components/Signup';
+import WebBuilder from './components/WebBuilder';
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="Home" element={<Home />} />
@@ -20,6 +21,7 @@ function App() {
           <Route path="Contfeed" element={<Contfeed />} />
           <Route path="Signup" element={<Signup />} />
           <Route path="Login" element={<Login />} />
+          <Route path="builder" element={<WebBuilder />} />
         </Routes>
       </BrowserRouter>
     </div>

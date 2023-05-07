@@ -1,7 +1,34 @@
 import React from 'react'
 import { Formik } from 'formik'
+import app_config from '../config'
+import Swal from 'sweetalert2';
 
 const Login = () => {
+
+  const {apiUrl} = app_config;
+
+  const loginSubmit = async (values) => {
+    const res = await fetch( apiUrl+'/user/authenticate', {
+      method : 'POST',
+      body: JSON.stringify(values),
+      headers: {
+        'Content-Type' : 'application/json'
+      }
+    })
+
+    console.log(res.status);
+
+    if(res.status === 200){
+      Swal.fire({ icon : 'success', title: 'Success', text: 'login success' });
+      const data = await res.json();
+
+      sessionStorage.setItem('user', JSON.stringify(data));
+
+    }else if(res.status === 401)
+    Swal.fire({ icon : 'error', title: 'Error', text: 'login failed' });
+
+  }
+
   return (
     <div className='col-md-4 col-lg-3 col-xxl-2 mx-auto  d-flex vh-100 justify-content-center align-items-center'>
 
@@ -11,7 +38,7 @@ const Login = () => {
             Login
           </p>
           <Formik initialValues={{ email: '', password: '' }}
-            onSubmit={(values) => { console.log(values); }}>
+            onSubmit={loginSubmit}>
 
             {
             ({ values, handleSubmit, handleChange }) => (

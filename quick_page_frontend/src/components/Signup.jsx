@@ -1,8 +1,31 @@
 import { Formik } from 'formik';
 import React from 'react'
 import Swal from 'sweetalert2';
+import app_config from '../config';
 
 const Signup = () => {
+
+  const {apiUrl} = app_config;
+
+  const generateWebpage = async (userid) => {
+      const res = await fetch(apiUrl+'/webpage/add', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body : JSON.stringify({
+          title : '',
+    data : {},
+    expireDate : new Date().setDate(new Date().getDate() + 10),
+    user: userid,
+    createdAt: new Date()
+        })
+      });
+
+      if(res.status === 200){
+        console.log('webpage created');
+      }
+  }
 
   const userSubmit = async (values) => {
     console.log(values);
@@ -22,6 +45,8 @@ const Signup = () => {
     console.log(res.status);
 
     if(res.status === 200){
+      const data = await res.json();
+      generateWebpage(data._id);
       Swal.fire({ icon : 'success', title: 'Success', text: 'You are registered' });
     }
 

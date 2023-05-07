@@ -7,11 +7,12 @@ import gsCustome from "grapesjs-custom-code";
 import "grapesjs-preset-webpage/dist";
 import gsTap from "grapesjs-tabs";
 import Basics from "grapesjs-blocks-basic";
-import BaseReactComponent from "./base-react-component";
-import app_config from "../../config";
+import app_config from "../config";
+// import BaseReactComponent from "./base-react-component";
+// import app_config from "../../config";
 
 const WebBuilder = () => {
-  const url = app_config.backend_url;
+  const url = app_config.apiUrl;
   const [pluginLoaded, setPluginLoaded] = useState(false);
   const [editor, setEditor] = useState(null);
   const [webpageData, setWebpageData] = useState(null);
@@ -76,7 +77,7 @@ const WebBuilder = () => {
         width: "auto",
         container: "#gjs",
         fromElement: true,
-        plugins: [gsWebpage, gsCustome, gsTap, Basics, BaseReactComponent],
+        plugins: [gsWebpage, gsCustome, gsTap, Basics],
         // storageManager: {
         //   id: "gjs-",
         //   type: "local",
