@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <div>
         <nav
-  className="navbar navbar-expand-lg fixed-top navbar-scroll shadow-0"
+  className="navbar navbar-expand-lg navbar-scroll shadow-0"
   style={{ backgroundColor: "#fff" }}
 >
   <div className="container">

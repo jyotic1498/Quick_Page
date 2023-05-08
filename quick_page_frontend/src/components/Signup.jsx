@@ -47,7 +47,9 @@ const Signup = () => {
     if(res.status === 200){
       const data = await res.json();
       generateWebpage(data._id);
-      Swal.fire({ icon : 'success', title: 'Success', text: 'You are registered' });
+      Swal.fire({ icon : 'success', title: 'Success', text: 'You are registered' }).then(()=>{
+        window.location.href = './builder'
+      });
     }
 
     

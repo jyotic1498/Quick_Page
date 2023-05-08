@@ -19,7 +19,9 @@ const Login = () => {
     console.log(res.status);
 
     if(res.status === 200){
-      Swal.fire({ icon : 'success', title: 'Success', text: 'login success' });
+      Swal.fire({ icon : 'success', title: 'Success', text: 'login success' }).then(()=>{
+        window.location.href = './builder'
+      });
       const data = await res.json();
 
       sessionStorage.setItem('user', JSON.stringify(data));
