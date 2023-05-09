@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+
 const Home = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const Home = () => {
               alt="Website"
             />
             <div className="carousel-caption d-none d-md-block bg-light">
+              <img src="\QP.jpg" alt="logo" />
               <h1>QUICK PAGE</h1>
               <p>"Create and publish web pages in minutes with Quick Page, A Disposable Website Creator - The hassle-free way to build and manage your online presence!"</p>
             </div>
@@ -26,7 +28,9 @@ const Home = () => {
         </div>
 
       </div>
+      <div>
 
+      </div>
     </>
   )
 }

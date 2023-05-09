@@ -10,6 +10,7 @@ const Nav = () => {
 >
   <div className="container">
     <NavLink className="navbar-brand disabled">
+      <img src="./QP.jpg" alt="" height={25} width={25} />
       Quick Page
     </NavLink>
     <button
