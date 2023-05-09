@@ -1,0 +1,48 @@
+.mycard {
+    border: 1px lightblue solid;
+    background-color: rgb(6, 135, 240);
+    width: 30%;
+    padding-right: 2%;
+    padding-left: 4%;
+    padding-bottom: 2%;
+    color: white;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+input {
+    background-color: rgb(6, 135, 240);
+    border-bottom: 2px solid rgb(225, 219, 219);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tbox {
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: white;
+    border-color: rgb(145, 158, 241);
+    padding: 3%;
+    font-size: 20px;
+    color: rgb(6, 135, 240);
+}
+
+.tbox::placeholder {
+    color: rgb(192, 187, 187);
+    font-size: 15px;
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-
+import logo from './QP.png'
 const Nav = () => {
   return (
     <div>
@@ -10,7 +10,7 @@ const Nav = () => {
 >
   <div className="container">
     <NavLink className="navbar-brand disabled">
-      <img src="./QP.jpg" alt="" height={25} width={25} />
+      <img src={logo} alt="" height={40} width={40} />
       Quick Page
     </NavLink>
     <button
