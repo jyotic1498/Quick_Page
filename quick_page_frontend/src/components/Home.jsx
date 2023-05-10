@@ -36,7 +36,7 @@ const Home = () => {
                 <div className="card-body ">
                   <h5 className="card-title">What are disposable web pages?</h5>
                   <p className="card-text">
-                  Disposable web pages, also known as temporary or throwaway web pages, are web pages that are designed to be used once and then discarded. These pages are typically used for short-term purposes, such as sharing a quick piece of information, testing website layouts, or sending private messages. 
+                    Disposable web pages, also known as temporary or throwaway web pages, are web pages that are designed to be used once and then discarded. These pages are typically used for short-term purposes, such as sharing a quick piece of information, testing website layouts, or sending private messages.
                   </p>
                 </div>
               </div>
@@ -53,22 +53,22 @@ const Home = () => {
       <div>
         <div className="p-1 mx-5">
           <div className="row m-3">
-          <div className="col-md-4 col-sm-12">
+            <div className="col-md-4 col-sm-12">
               <div className="card">
                 <img src="https://images.pexels.com/photos/2672979/pexels-photo-2672979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" className='card-img' height={"250px"} />
               </div>
             </div>
             <div className="col-md-8 col-sm-12 d-flex align-item-center justify-center">
-            <div className="card py-3">
+              <div className="card py-3">
                 <div className="card-body ">
                   <h5 className="card-title">What kind of people need disposable web pages or websites?</h5>
                   <p className="card-text">
-                    Individuals who want to create temporary websites, freelancers who want to create online portfolio or resume without the need of full website, small business or startups who need temporary websites, non-profit organizations for a specific event or campaign, students for their projects or artists or musicians who want to showcase their work or promote an event temporarily. 
+                    Individuals who want to create temporary websites, freelancers who want to create online portfolio or resume without the need of full website, small business or startups who need temporary websites, non-profit organizations for a specific event or campaign, students for their projects or artists or musicians who want to showcase their work or promote an event temporarily.
                   </p>
                 </div>
               </div>
             </div>
-            
+
           </div>
 
         </div>
@@ -79,7 +79,7 @@ const Home = () => {
                 <div className="card-body ">
                   <h5 className="card-title">Why are they called disposable web pages?</h5>
                   <p className="card-text">
-                  Disposable web pages are called "disposable" because they are designed to be temporary and easily disposable after their intended use. They are created to serve a specific purpose for a short period of time. Once the purpose of the disposable web page has been fulfilled, it can be easily deleted or removed, much like disposable items that are used once and then thrown away. 
+                    Disposable web pages are called "disposable" because they are designed to be temporary and easily disposable after their intended use. They are created to serve a specific purpose for a short period of time. Once the purpose of the disposable web page has been fulfilled, it can be easily deleted or removed, much like disposable items that are used once and then thrown away.
                   </p>
                 </div>
               </div>
