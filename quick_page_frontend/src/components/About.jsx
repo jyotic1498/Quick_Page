@@ -11,7 +11,7 @@ const About = () => {
                     alt="About us"
                 />
                 <div className="mask" style={{ backgroundColor: "hsla(0, 0%, 0%, 0.6)" }}>
-                    <div className="d-flex justify-content-center align-items-center h-100">
+                    <div className="d-flex justify-content-center align-items-center h-100 bg">
                         <h1 className="text-white display-2 fw-semibold mb-0">ABOUT US</h1>
                     </div>
                 </div>

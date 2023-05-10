@@ -86,7 +86,7 @@ const Home = () => {
             </div>
             <div className="col-sm-12 col-md-4">
               <div className="card">
-                <img src="https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" height={"250px"} className='card-img' />
+                <img src="https://images.pexels.com/photos/10981240/pexels-photo-10981240.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" height={"250px"} className='card-img' />
               </div>
             </div>
           </div>
