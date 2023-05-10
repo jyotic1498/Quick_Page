@@ -16,54 +16,81 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <div className="container mt-4">
-                    <div className="row m-4">
-                        <div className="col-sm-6">
-                            <div className="card">
-                                <div className="card-body">
-                                    <h5 className="card-title">Who are we?</h5>
-                                    <p className="card-text">
-                                        With supporting text below as a natural lead-in to additional content.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-sm-6">
-                            <div className="card">
-                                <div className="card-body">
-                                    <h5 className="card-title">What we provide?</h5>
-                                    <p className="card-text">
-                                        With supporting text below as a natural lead-in to additional content.
-                                    </p>
-                                </div>
+
+            <div className="container mt-4">
+                <div className="row m-4">
+                    <div className="col-sm-6">
+                        <div className="card">
+                            <div className="card-body">
+                                <h5 className="card-title">Who are we?</h5>
+                                <p className="card-text">
+                                    With supporting text below as a natural lead-in to additional content.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div className="row m-4">
-                        <div className="col-sm-6">
-                            <div className="card">
-                                <div className="card-body">
-                                    <h5 className="card-title">Who are we?</h5>
-                                    <p className="card-text">
-                                        With supporting text below as a natural lead-in to additional content.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-sm-6">
-                            <div className="card">
-                                <div className="card-body">
-                                    <h5 className="card-title">What we provide?</h5>
-                                    <p className="card-text">
-                                        With supporting text below as a natural lead-in to additional content.
-                                    </p>
-                                </div>
+                    <div className="col-sm-6">
+                        <div className="card">
+                            <div className="card-body">
+                                <h5 className="card-title">What we provide?</h5>
+                                <p className="card-text">
+                                    With supporting text below as a natural lead-in to additional content.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <div className="row m-4">
+                    <div className="col-sm-6">
+                        <div className="card">
+                            <div className="card-body">
+                                <h5 className="card-title">Who are we?</h5>
+                                <p className="card-text">
+                                    With supporting text below as a natural lead-in to additional content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-6">
+                        <div className="card">
+                            <div className="card-body">
+                                <h5 className="card-title">What we provide?</h5>
+                                <p className="card-text">
+                                    With supporting text below as a natural lead-in to additional content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container">
+                <h3 className='text-center'>Our Developers</h3>
+                <div className="row m-2 d-flex justify-content-center align-items-center">
+                    <div className="col-sm-4">
+                        <div className="card">
+                            <div className="card-body">
+                                <h5 className="card-title"></h5>
+                                <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" className='card-img' />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                        <div className="card">
+                            <div className="card-body">
+                                <h5 className="card-title"></h5>
+                                <img src="https://images.pexels.com/photos/834863/pexels-photo-834863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" className='card-img' />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                        <div className="card">
+                            <div className="card-body">
+                                <h5 className="card-title"></h5>
+                                <img src="https://images.pexels.com/photos/834863/pexels-photo-834863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" className='card-img' />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
