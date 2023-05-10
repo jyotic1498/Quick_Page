@@ -8,6 +8,8 @@ import Login from './components/Login';
 import Contfeed from './components/Contfeed';
 import Signup from './components/Signup';
 import WebBuilder from './components/WebBuilder';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
           <Route path="Signup" element={<Signup />} />
           <Route path="Login" element={<Login />} />
           <Route path="builder" element={<WebBuilder />} />
+          
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

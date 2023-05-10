@@ -91,16 +91,19 @@ const Signup = () => {
                   name="password"
                 />
 
-                <button type="submit" className="btn btn-primary mt-5 w-100">
+                <button type="submit" className="btn btn-primary mt-5 w-100" style={{backgroundColor:"rgba(255, 128, 0, 0.783)"}}>
                   Submit
                 </button>
               </form>
             )}
           </Formik>
-
-          <a href="" className="d-block text-center btn btn-link mt-4">
-            SignUp Here
+          <div className='d-block text-center '>
+          <p className='mt-4'>Already have an account?</p>
+          <a href="./Login" className="btn btn-link"> Login
           </a>
+          </div>
+          
+           
         </div>
       </div>
     </div>
