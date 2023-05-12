@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import htmlToReact from "html-to-react";
 
-import app_config from "../../config";
+import app_config from "../config";
 import { useParams } from "react-router-dom";
 
 const LivePage = () => {
-  const url = app_config.backend_url;
+  const url = app_config.apiUrl;
   const [pageHTML, setPageHTML] = useState("");
   const [pageCSS, setPageCSS] = useState("");
   const [page, setPage] = useState(null);

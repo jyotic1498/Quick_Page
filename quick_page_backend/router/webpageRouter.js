@@ -52,6 +52,14 @@ router.get('/getbyid/:id', (req, res) => {
         res.json(err);
     });
 })
+router.get('/getbyuser/:id', (req, res) => {
+    Model.findOne({user : req.params.id})
+    .then((result) => {
+        res.json(result);
+    }).catch((err) => {
+        res.json(err);
+    });
+})
 
 router.put('/update/:userid', (req, res) => {
     Model.findByIdAndUpdate(req.params.userid, req.body)

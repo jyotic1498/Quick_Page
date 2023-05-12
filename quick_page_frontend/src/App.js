@@ -9,6 +9,7 @@ import Contfeed from './components/Contfeed';
 import Signup from './components/Signup';
 import WebBuilder from './components/WebBuilder';
 import Footer from './components/Footer';
+import LivePage from './components/LivePage';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="Signup" element={<Signup />} />
           <Route path="Login" element={<Login />} />
           <Route path="builder" element={<WebBuilder />} />
+          <Route path="live/:pageid" element={<LivePage />} />
           
         </Routes>
         <Footer />

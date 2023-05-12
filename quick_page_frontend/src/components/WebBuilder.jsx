@@ -21,7 +21,7 @@ const WebBuilder = () => {
     JSON.parse(sessionStorage.getItem("user"))
   );
   const saveToDB = async () => {
-
+    console.log(webpageData);
     console.log(editor.getProjectData());
     // return;
     // console.log(editor.getJs());
@@ -62,10 +62,16 @@ const WebBuilder = () => {
     // setPageHTML(data.data.html);
     // setPageCSS(data.data.css);
   };
-  
+
 
   useEffect(() => {
-    
+    fetchPageData();
+  }, [])
+
+
+
+  useEffect(() => {
+
     if (!pluginLoaded) {
       // addTablePlugin();
       // addChartPlugin();
@@ -77,6 +83,10 @@ const WebBuilder = () => {
         width: "auto",
         container: "#gjs",
         fromElement: true,
+        storageManager: {
+          autosave: false,
+        autoload: false,
+        },
         plugins: [gsWebpage, gsCustome, gsTap, Basics],
         // storageManager: {
         //   id: "gjs-",
@@ -155,7 +165,7 @@ const WebBuilder = () => {
           setWebpageData(webpage);
           if (webpage.editorData) e.loadProjectData(webpage.editorData);
           setEditor(e);
-          });
+        });
     }
   });
 
