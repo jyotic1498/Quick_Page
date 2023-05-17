@@ -86,7 +86,7 @@ const About = () => {
                         <div className="card">
                             <div className="card-body">
                                 <h5 className="card-title"></h5>
-                                <img src="https://images.pexels.com/photos/834863/pexels-photo-834863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" className='card-img' />
+                                <img src="https://images.pexels.com/photos/1130624/pexels-photo-1130624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" className='card-img' />
                             </div>
                         </div>
                     </div>

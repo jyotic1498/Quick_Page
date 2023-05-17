@@ -1,13 +1,13 @@
 import React from 'react'
-import { Link, NavLink, useHistory } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 // import {useHistory} from 'react-router-dom'
 import logo from './QP.png'
 const Nav = () => {
   let user = JSON.parse(localStorage.getItem('gjsProject'))
-  const history = useHistory();
+  const navigate = useNavigate();
   const logOut = () => {
     localStorage.clear();
-    history.push('/Signup')
+    navigate('/Singup')
   }
   return (
     < div >
@@ -53,30 +53,36 @@ const Nav = () => {
 
             </ul>
 
-            {
-              <ul className="navbar-nav flex-row">
-                localStorage.getItem('gjsProject') ?
+            <div className="navbar-nav flex-row">
+              {
+                !localStorage.getItem('gjsProject') ?
 
-                <>
-                  <li className="nav-item">
-                    <Link className="nav-link px-3" to="/Login">
-                      Login
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link px-3" to="/Signup">
-                      Sign Up
-                    </Link>
-                  </li>
-                  :
-                  <li>
-                    <Link className="nav-link px-3" to='/Login' onClick={logOut}>
-                      Logout
-                    </Link>
-                  </li>
-                </>
-              </ul>
-            }
+                  <>
+                    <li className="nav-item">
+                      <Link className="nav-link px-3" to="/Login">
+                        Login
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link px-3" to="/Signup">
+                        Sign Up
+                      </Link>
+                    </li>
+                  </>
+                  : null
+              }
+              {/* {
+                !localStorage.getItem('gjsProject') ?
+                  <>
+                    <li>
+                      <Link className="nav-link px-3" to='/Login' onClick={logOut}>
+                        Logout
+                      </Link>
+                    </li>
+                  </>
+                  : null
+              } */}
+            </div>
 
           </div>
         </div>

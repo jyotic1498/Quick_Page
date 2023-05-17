@@ -11,7 +11,6 @@ import WebBuilder from './components/WebBuilder';
 import Footer from './components/Footer';
 import LivePage from './components/LivePage';
 
-
 function App() {
   return (
     <div>
@@ -29,6 +28,9 @@ function App() {
           
         </Routes>
         <Footer />
+        <Routes>
+          
+        </Routes>
       </BrowserRouter>
     </div>
   );
